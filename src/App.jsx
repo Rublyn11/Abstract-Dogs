@@ -6,6 +6,7 @@ import About from './components/about';
 import Sneek from './components/sneek';	
 import Roadmap from './components/roadmap';
 import Mobnav from './components/Mobnav';
+import FAQ from './components/faq';
 import './App.css';
 
 function App() {
@@ -36,6 +37,30 @@ function App() {
     },
   ];
 
+  const faqData = [
+    {
+      question: 'What is Abstract Dogs?',
+      answer: 'Abstract Dogs is an NFT collection featuring pixel art dogs with unique utilities such as staking, community perks, and rarity-based rewards.',
+    },
+    {
+      question: 'How can I buy an Abstract Dog?',
+      answer: 'You can purchase Abstract Dogs on supported NFT marketplaces on the Solana blockchain.',
+    },
+    {
+      question: 'What utilities do Abstract Dogs offer?',
+      answer: 'Owners gain access to staking, exclusive events, voting rights, and commercial rights to use their NFTs.',
+    },
+    {
+      question: 'What is the Merge or Burn feature?',
+      answer: 'The Merge or Burn feature allows you to combine two NFTs to create a rarer version, with a 50% chance of both NFTs being destroyed.',
+    },
+    {
+      question: 'Can I stake my Abstract Dog?',
+      answer: 'Yes! You can stake your Abstract Dog NFTs to earn tokens within the ecosystem.',
+    },
+  ];
+  
+
   return (
     <>
     <div className='page'>
@@ -50,6 +75,9 @@ function App() {
       {/* <Roadmap steps={roadmapSteps} /> */}
       <div style={{ backgroundColor: '#222', color: '#fff', minHeight: '100vh', padding: '2rem 0', marginTop: '7rem', borderRadius: "60px" }}>
       <Roadmap steps={roadmapSteps} />
+      </div>
+      <div style={{ backgroundColor: 'transparent', color: '#fff', minHeight: '100vh', padding: '2rem 0' }}>
+      <FAQ faqs={faqData} />
       </div>
     </div>
     </>
