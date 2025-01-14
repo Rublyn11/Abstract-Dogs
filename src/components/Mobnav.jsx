@@ -43,13 +43,14 @@ function MobileNavbar() {
           />
         </div>
 
-        {/* Menu Toggle Button */}
+        {/* Menu Toggle Button */} {/*check back here for toggle menu styling*/}
         <div
           className="MenuIcon"
           onClick={toggleMenu}
           style={{
             fontSize: '1.8rem',
             cursor: 'pointer',
+            color: "#F5F7F5"
           }}
         >
           <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
@@ -64,7 +65,7 @@ function MobileNavbar() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            backgroundColor: '#f8f8f8',
+            background: '#ADA493',
             padding: '1rem 0',
           }}
         >
@@ -78,31 +79,37 @@ function MobileNavbar() {
             }}
           >
             <li
+              onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
               style={{
                 padding: '0.8rem 0',
                 fontSize: '1.2rem',
                 cursor: 'pointer',
-                borderBottom: '1px solid #ddd',
+                background: '#ADA493',
+                borderBottom: '1px solid #F5F7F5',
               }}
             >
               About
             </li>
             <li
+              onClick={() => document.getElementById('sneek').scrollIntoView({ behavior: 'smooth' })}
               style={{
                 padding: '0.8rem 0',
                 fontSize: '1.2rem',
                 cursor: 'pointer',
-                borderBottom: '1px solid #ddd',
+                background: '#ADA493',
+                borderBottom: '1px solid #F5F7F5',
               }}
             >
               Collection
             </li>
             <li
+              onClick={() => document.getElementById('faq').scrollIntoView({ behavior: 'smooth' })}
               style={{
                 padding: '0.8rem 0',
                 fontSize: '1.2rem',
                 cursor: 'pointer',
-                borderBottom: '1px solid #ddd',
+                background: '#ADA493',
+                borderBottom: '1px solid #F5F7F5',
               }}
             >
               FAQs
@@ -117,6 +124,7 @@ function MobileNavbar() {
               justifyContent: 'center',
               alignItems: 'center',
               gap: '1rem',
+              background: '#ADA493',
               marginTop: '1rem',
             }}
           >
@@ -128,7 +136,7 @@ function MobileNavbar() {
             >
               <FontAwesomeIcon
                 icon={faTwitter}
-                style={{ color: '#1DA1F2', fontSize: '1.5rem' }}
+                style={{ color: '#1DA1F2', fontSize: '1.5rem', background: '#ADA493', }}
               />
             </a>
             <a
@@ -139,7 +147,7 @@ function MobileNavbar() {
             >
               <FontAwesomeIcon
                 icon={faDiscord}
-                style={{ color: '#7289DA', fontSize: '1.5rem' }}
+                style={{ color: '#7289DA', fontSize: '1.5rem', background: '#ADA493', }}
               />
             </a>
           </div>

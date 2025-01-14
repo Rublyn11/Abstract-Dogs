@@ -7,6 +7,7 @@ import Sneek from './components/sneek';
 import Roadmap from './components/roadmap';
 import Mobnav from './components/Mobnav';
 import FAQ from './components/faq';
+import Footer from './components/footer';
 import './App.css';
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
     },
     {
       question: 'How can I buy an Abstract Dog?',
-      answer: 'You can purchase Abstract Dogs on supported NFT marketplaces on the Solana blockchain.',
+      answer: 'You can purchase Abstract Dogs on supported NFT marketplaces on the Abstract blockchain.',
     },
     {
       question: 'What utilities do Abstract Dogs offer?',
@@ -79,6 +80,7 @@ function App() {
       <div style={{ backgroundColor: 'transparent', color: '#fff', minHeight: '100vh', padding: '2rem 0' }}>
       <FAQ faqs={faqData} />
       </div>
+      <Footer />
     </div>
     </>
   )

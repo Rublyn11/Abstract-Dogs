@@ -14,9 +14,21 @@ function header() {
         </div>
         <div className="Nav-Lists" style={{display: "flex", gap: "2.5rem", alignItems: "center"}}>
             <ul style={{ listStyle: "none", display: "flex", gap: "2.2rem"}}>
-                <li>About</li>
-                <li>Collection</li>
-                <li>FAQs</li>
+                <li
+                    onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
+                >
+                    About
+                </li>
+                <li
+                    onClick={() => document.getElementById('sneek').scrollIntoView({ behavior: 'smooth' })}
+                >
+                    Collection
+                </li>
+                <li
+                    onClick={() => document.getElementById('faq').scrollIntoView({ behavior: 'smooth' })}
+                >
+                    FAQs
+                </li>
             </ul>
             <div className="btn" style={{display: "flex", gap: "1rem"}}>
                 <button type="button" className='btn_first'>Mint Abstract-Dogs</button>

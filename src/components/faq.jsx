@@ -10,6 +10,7 @@ const FAQ = ({ faqs }) => {
 
   return (
     <div
+      id='faq'
       style={{
         width: '90%',
         margin: '2rem auto',

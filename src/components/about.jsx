@@ -3,7 +3,7 @@ import React from 'react'
 function about() {
   return (
     <div className='About' style={{ width: "90%", margin: "6rem auto", fontFamily: "var(--font-family)"}}>
-        <div className="About-text" style={{display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%"}}>	
+        <div id='about' className="About-text" style={{display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%"}}>	
             <h2 style={{color: "#F5F7F5", fontSize: "3.5rem", fontWeight: "600"}}>
               More About <br/> <span style={{color: "#3F2711"}}>Abstract-Dogs</span> 
               </h2>
