@@ -19,7 +19,7 @@ function header() {
                 <li>FAQs</li>
             </ul>
             <div className="btn" style={{display: "flex", gap: "1rem"}}>
-                <button type="button" className='btn_first'>Buy Abstract-Dogs</button>
+                <button type="button" className='btn_first'>Mint Abstract-Dogs</button>
                 {/* <button type="button" className='btn_second'>Build Abstract Dogs</button> */}
             </div>
             {/* <div className="socials" style={{display: "flex", alignItems: "center", gap: "1rem"}}>
