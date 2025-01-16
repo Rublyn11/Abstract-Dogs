@@ -6,6 +6,12 @@ import { faDiscord, faTwitter} from '@fortawesome/free-brands-svg-icons';
 import Logo from '../assets/AbstractDogsLogo.png'
 
 function header() {
+
+    const handleMintButtonClick = () => {
+        window.open('https://atlas3.io/project/abstract-dog-free-mint', '_blank', 'noopener noreferrer');
+    };
+
+
   return (
     <div className="Navbar">
         <div className='Nav-Items'>
@@ -31,7 +37,7 @@ function header() {
                 </li>
             </ul>
             <div className="btn">
-                <button type="button" className='btn_first'>Mint Abstract-Dogs</button>
+                <button type="button" onClick={handleMintButtonClick} className='btn_first'>Mint Abstract-Dogs</button>
             </div>
             <div className="socials">
             <a 

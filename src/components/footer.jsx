@@ -14,7 +14,7 @@ function footer() {
                 </div>
                 <ul className='foot-list'>
                     <li>
-                        <a  href="https://atlas3.io/project/abstract-dog-free-mint "
+                        <a href="https://atlas3.io/project/abstract-dog-free-mint "
                             target='_blank' 
                             rel='noopener noreferrer'
                         >
@@ -22,7 +22,7 @@ function footer() {
                         </a>
                     </li>
                     <li>
-                        <a  href="https://atlas3.io/project/abstract-dog-free-mint "
+                        <a href="https://atlas3.io/project/abstract-dog-free-mint "
                             target='_blank' 
                             rel='noopener noreferrer'
                         >

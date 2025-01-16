@@ -18,11 +18,6 @@ function Sneek() {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  // const sneekbtn = window.innerWidth <= 1240 ? {
-  //   width: "20rem",
-  //   height: "7rem"
-  // } : {};
-
   return (
     <div
       id='sneek'

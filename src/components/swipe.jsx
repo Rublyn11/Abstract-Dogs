@@ -37,6 +37,14 @@ export default function Swipe() {
           clickable: true, // Enable pagination dots
         }}
         breakpoints={{
+          375: {
+            slidesPerView: 1,
+            spaceBetween: 1,
+          },
+          426: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
           640: {
             slidesPerView: 2,
             spaceBetween: 20,
@@ -57,6 +65,7 @@ export default function Swipe() {
         {[Sneek1, Sneek2, Sneek3, Sneek4, Sneek5, Sneek6, Sneek7, Sneek8, Sneek9, Sneek10].map((image, index) => (
           <SwiperSlide key={index} className="caro">
             <img
+              className="caro-img"
               src={image}
               alt={`carousel-${index + 1}`}
             />

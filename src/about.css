@@ -26,3 +26,40 @@
     width: 50%;
     font-size: 1.6rem;
 }
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 768px) {
+    .About-text > h2{
+        font-size: 2.5rem;
+    }
+    .About-text > p{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 426px) {
+    .About-text{
+        flex-direction: column;
+        align-items: start;
+    }
+    .About-text > p{
+        width: 100%;
+        line-height: normal;
+    }
+    .About-text > h2{
+        font-size: 2.5rem;
+        /* line-height: 0; */
+    }
+
+}
+
+@media (max-width: 375px) {
+  
+}
+
+@media (max-width: 320px) {
+  
+}

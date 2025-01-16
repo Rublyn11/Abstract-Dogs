@@ -1,0 +1,76 @@
+.MobileNavbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.NavbarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-logo{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.MenuIcon{
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #F5F7F5;
+}
+
+.DropdownMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: column;
+    background: #ADA493;
+    padding: 1rem 0;
+}
+
+.DropdownMenu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.DropdownMenu ul li{
+    padding: 0.8rem 0;
+    cursor: pointer;
+    font-size: 1.2rem;
+    background: #ADA493;
+    border-bottom: 1px solid #F5F7F5;
+}
+
+.SocialIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: #ADA493;
+    margin-top: 1rem;
+}
+
+.SocialIcons a{
+    text-decoration: none;
+}
+
+.twitter-icon{
+    color: #1DA1F2;
+    font-size: 1.5rem;
+    background: #ADA493;
+}
+
+.discord-icon{
+    color: #7289DA;
+    font-size: 1.5rem;
+    background: #ADA493;
+}

@@ -102,3 +102,40 @@ ul > li:hover{
 .Font-icon2{
     color: #7289DA;
 }
+
+@media (max-width: 1024px) {
+    
+  }
+  
+  @media (max-width: 768px) {
+    .btn > button{
+        font-size: 1rem;
+    }
+    ul > li{
+        font-size: 1rem;
+    }
+    .Nav-Lists > ul{
+        gap: 1.5rem;
+    }
+    .socials{
+        gap: 0.5rem;
+    }
+    .Font-icon1, .Font-icon2{
+        font-size: 1rem;
+    }
+    .Nav-Lists{
+        gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    
+  }
+  
+  @media (max-width: 375px) {
+    
+  }
+  
+  @media (max-width: 320px) {
+    
+  }

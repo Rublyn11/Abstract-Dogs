@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../header.css';
+import '../mobnav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faDiscord, faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -13,107 +13,40 @@ function MobileNavbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleMenuItemClick = (sectionId) => {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    setIsMenuOpen(false); // Close the menu
+  };
+
   return (
-    <div
-      className="MobileNavbar"
-      style={{
-        position: 'sticky',
-        top: 0,
-        width: '100%',
-        backgroundColor: '#fff',
-        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-        zIndex: 1000,
-      }}
-    >
-      <div
-        className="NavbarContainer"
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          padding: '1rem',
-        }}
-      >
+    <div className="MobileNavbar">
+      <div className="NavbarContainer">
         {/* Logo Section */}
         <div className="Logo">
           <img
             src={Logo}
             alt="Logo img"
-            style={{ width: '3.5rem', height: '3.5rem', cursor: 'pointer' }}
+            className="nav-logo"
+            style={{ width: '2.5rem', height: '2.5rem' }}
           />
         </div>
 
-        {/* Menu Toggle Button */} {/*check back here for toggle menu styling*/}
-        <div
-          className="MenuIcon"
-          onClick={toggleMenu}
-          style={{
-            fontSize: '1.8rem',
-            cursor: 'pointer',
-            color: "#F5F7F5"
-          }}
-        >
-          <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
+        {/* Menu Toggle Button */}
+        <div className="MenuIcon" onClick={toggleMenu}>
+          <FontAwesomeIcon
+            className="times"
+            icon={isMenuOpen ? faTimes : faBars}
+          />
         </div>
       </div>
 
       {/* Dropdown Menu */}
       {isMenuOpen && (
-        <div
-          className="DropdownMenu"
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            background: '#ADA493',
-            padding: '1rem 0',
-          }}
-        >
-          <ul
-            style={{
-              listStyle: 'none',
-              padding: 0,
-              margin: 0,
-              textAlign: 'center',
-              width: '100%',
-            }}
-          >
-            <li
-              onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
-              style={{
-                padding: '0.8rem 0',
-                fontSize: '1.2rem',
-                cursor: 'pointer',
-                background: '#ADA493',
-                borderBottom: '1px solid #F5F7F5',
-              }}
-            >
-              About
-            </li>
-            <li
-              onClick={() => document.getElementById('sneek').scrollIntoView({ behavior: 'smooth' })}
-              style={{
-                padding: '0.8rem 0',
-                fontSize: '1.2rem',
-                cursor: 'pointer',
-                background: '#ADA493',
-                borderBottom: '1px solid #F5F7F5',
-              }}
-            >
-              Collection
-            </li>
-            <li
-              onClick={() => document.getElementById('faq').scrollIntoView({ behavior: 'smooth' })}
-              style={{
-                padding: '0.8rem 0',
-                fontSize: '1.2rem',
-                cursor: 'pointer',
-                background: '#ADA493',
-                borderBottom: '1px solid #F5F7F5',
-              }}
-            >
-              FAQs
-            </li>
+        <div className="DropdownMenu">
+          <ul>
+            <li onClick={() => handleMenuItemClick('about')}>About</li>
+            <li onClick={() => handleMenuItemClick('sneek')}>Collection</li>
+            <li onClick={() => handleMenuItemClick('faq')}>FAQs</li>
           </ul>
 
           {/* Socials */}
@@ -129,26 +62,18 @@ function MobileNavbar() {
             }}
           >
             <a
-              href="https://x.com/Abstract_Dog" // Replace with your Twitter URL
+              href="https://x.com/Abstract_Dog"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ textDecoration: 'none' }}
             >
-              <FontAwesomeIcon
-                icon={faTwitter}
-                style={{ color: '#1DA1F2', fontSize: '1.5rem', background: '#ADA493', }}
-              />
+              <FontAwesomeIcon icon={faTwitter} className="twitter-icon" />
             </a>
             <a
-              href="https://discord.com/invite/fTv5bhkSfN" // Replace with your Discord invite URL
+              href="https://discord.com/invite/fTv5bhkSfN"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ textDecoration: 'none' }}
             >
-              <FontAwesomeIcon
-                icon={faDiscord}
-                style={{ color: '#7289DA', fontSize: '1.5rem', background: '#ADA493', }}
-              />
+              <FontAwesomeIcon icon={faDiscord} className="discord-icon" />
             </a>
           </div>
         </div>
@@ -158,3 +83,4 @@ function MobileNavbar() {
 }
 
 export default MobileNavbar;
+

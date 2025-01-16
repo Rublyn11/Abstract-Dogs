@@ -70,8 +70,10 @@ function App() {
   return (
     <>
     <div className='page'>
-      <Header />
-      <div className='Mobnav-bar' style={{ display: 'none' }}>
+      <div className="header-nav">
+        <Header />  
+      </div>
+      <div className='Mobnav-bar'>
         <Mobnav />
       </div>
       <Home/>

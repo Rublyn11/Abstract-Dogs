@@ -3,6 +3,12 @@ import '../home.css';
 import HeroImg from '../assets/HeroImage.png'
 
 function home() {
+
+    const handleMintButtonClick = () => {
+        window.open('https://atlas3.io/project/abstract-dog-free-mint', '_blank', 'noopener noreferrer');
+      };
+
+
   return (
     <div className='Hero'>
         <div className="hero-text">
@@ -12,13 +18,15 @@ function home() {
             <p>
                 1,666 unique Pixel dog on the #Abstract blockchain with commercial rights.
             </p>
-            <button>
-            Buy Abstract-Dogs
+            <button
+            onClick={handleMintButtonClick}
+            >
+                Mint Abstract-Dogs
             </button>
         </div>
 
         <div className="img">
-            <img src={HeroImg} alt="HeroImg" style={{}} />
+            <img className='HeroImg' src={HeroImg} alt="HeroImg" />
         </div>
         
     </div>

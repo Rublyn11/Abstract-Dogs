@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .sneek-button{
@@ -26,4 +27,55 @@
     width: 28rem;
     height: 28rem;
     border-radius: 25px;
+}
+
+@media (max-width: 1024px) {
+    .sneek-button{
+        height: 7rem;
+        width: 25rem;
+    }
+    .sneek-Img > .sneek-peek-img{
+        width: 24rem;
+        height: 24rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sneek-button{
+        height: 5rem;
+        width: 18rem;
+        font-size: 1.8rem;
+    }
+    .sneek-Img > .sneek-peek-img{
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+@media (max-width: 426px) {
+    .sneek{
+        width: 100%;
+    }
+    .sneek-cont{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .sneek-Img > .sneek-peek-img{
+        width: 100%;
+    }
+    .sneek-button{
+        height: 3.5rem;
+        width: 14rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 375px) {
+  
+}
+
+@media (max-width: 320px) {
+  
 }
