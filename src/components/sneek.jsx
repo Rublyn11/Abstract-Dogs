@@ -4,6 +4,7 @@ import Sneek2 from '../assets/sneek2.jfif';
 import Sneek3 from '../assets/sneek3.jfif';
 import Sneek4 from '../assets/sneek4.jfif';
 import Sneek5 from '../assets/sneek5.jfif';
+import '../sneek.css';
 
 function Sneek() {
   // State to keep track of the current image index
@@ -17,53 +18,30 @@ function Sneek() {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
+  // const sneekbtn = window.innerWidth <= 1240 ? {
+  //   width: "20rem",
+  //   height: "7rem"
+  // } : {};
+
   return (
     <div
       id='sneek'
       className="sneek"
-      style={{
-        width: '90%',
-        margin: '0 auto',
-        fontFamily: 'var(--font-family)',
-      }}
     >
-      <div
-        className="sneek-cont"
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          // gap: '9rem',
-        }}
-      >
+      <div className="sneek-cont">
         <div className="sneek-btn">
           <button
-            className="sneek-btn"
+            className="sneek-button"
             onClick={handleImageChange}
-            style={{
-              cursor: 'pointer',
-              padding: '1rem 2rem',
-              fontSize: '2.5rem',
-              background: '#ADA493',
-              color: '#F5F7F5',
-              border: 'none',
-              borderRadius: '25px',
-              height: '9rem',
-              width: '30rem',
-            }}
           >
             Sneek Peek
           </button>
         </div>
         <div className="sneek-Img">
           <img
+            className='sneek-peek-img'
             src={images[currentImageIndex]}
             alt={`Sneek peek ${currentImageIndex + 1}`}
-            style={{
-              width: '28rem',
-              height: '28rem',
-              borderRadius: '25px',
-            }}
           />
         </div>
       </div>

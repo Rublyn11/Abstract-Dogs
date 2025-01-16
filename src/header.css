@@ -47,3 +47,58 @@ ul > li:hover{
 .socials > a:hover{
     transform: scale(1.1);
 }
+
+.Navbar{
+    width: 90%;
+    margin: 0 auto;
+    font-family: var(--font-family);
+}
+
+.Nav-Items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.Logo img{
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+}
+
+.Nav-Lists{
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.Nav-Lists > ul{
+    list-style: none;
+    display: flex;
+    gap: 2.2rem;
+}
+
+.btn{
+    display: flex;
+    gap: 1rem;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socials > a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.Font-icon1{
+    color: #1DA1F2;
+}
+
+.Font-icon2{
+    color: #7289DA;
+}

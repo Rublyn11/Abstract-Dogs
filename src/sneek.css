@@ -1,0 +1,29 @@
+.sneek{
+    width: 90%;
+    margin: 0 auto;
+    font-family: var(--font-family);
+}
+
+.sneek-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sneek-button{
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    background: #ADA493;
+    color: #F5F7F5;
+    border: none;
+    border-radius: 25px;
+    height: 9rem;
+    width: 30rem;
+}
+
+.sneek-Img > .sneek-peek-img{
+    width: 28rem;
+    height: 28rem;
+    border-radius: 25px;
+}

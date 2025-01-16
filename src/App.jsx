@@ -60,6 +60,11 @@ function App() {
       answer: 'Yes! You can stake your Abstract Dog NFTs to earn tokens within the ecosystem.',
     },
   ];
+
+
+  const style = window.innerWidth >= 1240 && window.innerWidth <=1340 ? {
+      overflow: 'hidden',
+  } : {};
   
 
   return (

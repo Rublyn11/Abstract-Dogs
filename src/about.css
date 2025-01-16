@@ -1,0 +1,28 @@
+.About{
+    width: 90%;
+    margin: 6rem auto;
+    font-family: var(--font-family);
+}
+
+.About-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.About-text > h2{
+    color: #F5F7F5;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.About-text > h2 > span{
+    color: #3f2711;
+}
+
+.About-text > p{
+    color: #F5F7F5;
+    width: 50%;
+    font-size: 1.6rem;
+}

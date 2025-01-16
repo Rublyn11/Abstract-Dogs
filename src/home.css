@@ -1,0 +1,35 @@
+.Hero{
+    width: 90%;
+    margin: 6rem auto;
+    font-family: var(--font-family);
+    display: flex;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.hero-text > h1{
+    color: #FE8A03;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.hero-text > p{
+    color: #F5F7F5;
+    font-size: 1.3rem;
+    width: 70%;
+}
+
+.hero-text > button{
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    background: #3F2711;
+    border: none;
+    color: #F5F7F5;
+}

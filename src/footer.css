@@ -1,0 +1,60 @@
+.footerMain{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.foot-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 3rem 0;
+    border-bottom: 2px solid #F5F7F5;
+}
+
+.foot-img > img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.foot-list{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.foot-list > li > a{
+    color: #F5F7F5;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.foot-socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.foot-socials > a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.fa-twitter{
+    color: #1DA1F2;
+    font-size: 1.5rem;
+}
+
+.fa-discord{
+    color: #7289DA;
+    font-size: 1.5rem;
+}
+
+.foot-two{
+    margin-bottom: 2rem;
+}
+
+.last-text{
+    text-align: center;
+    color: #F5F7F5;
+    font-weight: 600;
+}

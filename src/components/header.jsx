@@ -7,13 +7,13 @@ import Logo from '../assets/AbstractDogsLogo.png'
 
 function header() {
   return (
-    <div className="Navbar" style={{ width: "90%", margin: "0 auto", fontFamily: "var(--font-family)"}}>
-        <div className='Nav-Items' style={{display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "1rem"}}>
+    <div className="Navbar">
+        <div className='Nav-Items'>
         <div className='Logo'>
-        <img src={Logo} alt="Logo img" style={{ width: "3.5rem", height: "3.5rem", cursor: "pointer" }} />
+        <img src={Logo} alt="Logo img"/>
         </div>
-        <div className="Nav-Lists" style={{display: "flex", gap: "2.5rem", alignItems: "center"}}>
-            <ul style={{ listStyle: "none", display: "flex", gap: "2.2rem"}}>
+        <div className="Nav-Lists">
+            <ul>
                 <li
                     onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
                 >
@@ -30,35 +30,27 @@ function header() {
                     FAQs
                 </li>
             </ul>
-            <div className="btn" style={{display: "flex", gap: "1rem"}}>
+            <div className="btn">
                 <button type="button" className='btn_first'>Mint Abstract-Dogs</button>
-                {/* <button type="button" className='btn_second'>Build Abstract Dogs</button> */}
             </div>
-            {/* <div className="socials" style={{display: "flex", alignItems: "center", gap: "1rem"}}>
-                <button>
-                    <FontAwesomeIcon icon={faTwitter} style={{color: "#1DA1F2"}}/>
-                </button>
-                <button>
-                    <FontAwesomeIcon icon={faDiscord} style={{color: "#7289DA"}}/>
-                </button>
-            </div> */}
-
-            <div className="socials" style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+            <div className="socials">
             <a 
                 href="https://x.com/Abstract_Dog" // Replace with your Twitter URL
                 target="_blank" 
                 rel="noopener noreferrer"
-                style={{ display: "inline-block", textDecoration: "none" }}
             >
-                <FontAwesomeIcon icon={faTwitter} style={{ color: "#1DA1F2", fontSize: "1.5rem" }} />
+                <FontAwesomeIcon 
+                className='Font-icon1'
+                 icon={faTwitter}/>
             </a>
             <a 
                 href="https://discord.com/invite/fTv5bhkSfN" // Replace with your Discord invite URL
                 target="_blank" 
                 rel="noopener noreferrer"
-                style={{ display: "inline-block", textDecoration: "none" }}
             >
-                <FontAwesomeIcon icon={faDiscord} style={{ color: "#7289DA", fontSize: "1.5rem" }} />
+                <FontAwesomeIcon 
+                className='Font-icon2'
+                icon={faDiscord} />
             </a>
             </div>
 
